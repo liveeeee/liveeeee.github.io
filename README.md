@@ -1,2 +1,2 @@
-# liveeeee.github.io
+# lzbb.live
 lizhi music

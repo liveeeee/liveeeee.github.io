@@ -11,55 +11,51 @@
 <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
 <meta name="viewport" content="width=440,user-scalable=no">
 <style>
-        body { font-family: Arial, Helvetica, sans-serif; color: #6A6B6F; text-align: center; padding-top: 17px; width: 470px; margin: 0 auto; } h1 { font-size: 36px; } h2 { font-size: 24px; } p { font-size: 18px; } #skPlayer { margin: 27px auto 0; } .container { margin-top: 200px; } .doc { text-align: left; } pre { padding-left: 2em; font-size: 16px; line-height: 24px; color: #fff; background-color: #272822; border-radius: 3px; } @media screen and (max-width: 768px) { body { width: 100%; } .doc { display: none; } }
+        body {font-family: Arial, Helvetica, sans-serif;color: #6A6B6F;text-align: center;padding-top: 17px;/* width: 450px; */margin: 0 auto;} h1 { font-size: 36px; } h2 { font-size: 24px; } p { font-size: 18px; } #skPlayer { margin: 27px auto 0; } .container { margin-top: 200px; } .doc { text-align: left; } pre { padding-left: 2em; font-size: 16px; line-height: 24px; color: #fff; background-color: #272822; border-radius: 3px; } @media screen and (max-width: 768px) { body { width: 100%; } .doc { display: none; } }
     </style>
 </head>
 <body>
 <h1>B with U</h1>
 <div id="skPlayer"></div>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
 <div class="pure-menu custom-restricted-width">
-<!--<span class="pure-menu-heading" style="font-size: 1.17em; font-weight: bold;color: #6A6B6F;">专辑列表</span>-->
-<ul class="listimg pure-menu-list">
-<li class=""><a href="#" class="pure-menu-link" onclick="change(1)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/勾三搭四/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(2)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/1701/cover2.png"></a><img</li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(3)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/8/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(4)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/F/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(5)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/Imagine-2011/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(6)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/io/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(7)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/二零零九年十月十六日事件/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(8)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/你好，郑州/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(9)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/动静/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(10)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/108个关键词/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(11)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/爵士乐与不插电/爵士乐与不插电.jpg"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(12)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/北京不插电/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(13)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/在每一条伤心的应天大街上/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(14)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/工体东路没有人/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(15)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/我爱南京/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(16)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/我们也爱南京/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(17)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/梵高先生/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(18)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/电声与管弦乐/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(19)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/电声与管弦乐II/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(20)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/看见/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(21)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/被禁忌的游戏/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(22)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/这个世界会好吗/cover2.png"></a></li>
-<li class=""><a href="#" class="pure-menu-link" onclick="change(23)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/零碎/cover.png"></a></li>
-<li class=""><a href="https://support.qq.com/product/467468" class="pure-menu-link" ><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/小程序/hi.png"></a></li>
-<li class=""><a href="https://mp.weixin.qq.com/s/KA71AVm5mnQaEACyl3MF0A" class="pure-menu-link" ><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/小程序/小程序.png"></a></li>
-</ul>
-
-<style>.listimg{height: 410px;} .listimg ul{ list-style: none; margin: 0;} .listimg li{ display: inline;float:left; margin:0;width: 78px;height: 78px;} .listimg2{width: 72px;height: 72px;} .pure-menu-link {padding: .3em .3em;height: 72px;width: 72px;0 5px;} 
-#skPlayer {background-color:transparent;}#skPlayer .skPlayer-list {background-color:transparent;}.pure-menu { margin: 0 22px;}  
-#bblyric{ text-align: left; margin: 0px  28px ;color: #777;} #bbtrack{ text-align:right;margin: 0px  28px;}
-</style>
-</div>
-
+    <!--<span class="pure-menu-heading" style="font-size: 1.17em; font-weight: bold;color: #6A6B6F;">专辑列表</span>-->
+    <ul class="listimg pure-menu-list">
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(1)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/勾三搭四/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(2)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/1701/cover2.png"></a><img</li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(3)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/8/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(4)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/F/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(5)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/Imagine-2011/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(6)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/io/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(7)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/二零零九年十月十六日事件/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(8)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/你好，郑州/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(9)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/动静/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(10)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/108个关键词/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(11)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/爵士乐与不插电/爵士乐与不插电.jpg"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(12)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/北京不插电/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(13)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/在每一条伤心的应天大街上/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(14)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/工体东路没有人/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(15)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/我爱南京/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(16)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/我们也爱南京/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(17)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/梵高先生/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(18)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/电声与管弦乐/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(19)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/电声与管弦乐II/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(20)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/看见/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(21)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/被禁忌的游戏/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(22)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/这个世界会好吗/cover2.png"></a></li>
+    <li class=""><a href="#" class="pure-menu-link" onclick="change(23)"><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/零碎/cover.png"></a></li>
+    <li class=""><a href="https://support.qq.com/product/467468" class="pure-menu-link" ><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/小程序/hi.png"></a></li>
+    <li class=""><a href="https://mp.weixin.qq.com/s/KA71AVm5mnQaEACyl3MF0A" class="pure-menu-link" ><img class="listimg2" src="https://gcore.jsdelivr.net/gh/liveeeee/song@main/audio/小程序/小程序.png"></a></li>
+    </ul>
+    </div>
+<style>.listimg{height: 410px;margin-top: 184px;width: 386px;} .listimg ul{ list-style: none; margin: 0;} .listimg li{display: inline;float:left;margin:0;width: 77.2px;height: 77.2px;} .listimg2{width: 72px;height: 72px;} .pure-menu-link { padding: 0;  height: 77.5px;width: 77.5px;} 
+    #skPlayer {background-color:transparent;}#skPlayer .skPlayer-list {background-color:transparent;}.pure-menu {margin: 0  auto;width: 386px;}  
+    #bblyric{text-align: left;margin: 0px auto;color: #777;width: 386px;} #bbtrack{text-align:right;margin: 0 auto;width: 386px;}
+    </style>
 
 <div id="bblyric">
     <span id="lyric">loading...</span>
     </div>
-    <div id="bbtrack">
+    <div id="bbtrack" >
         <span>——《</span>
         <span id="track" style="text-align:right;">loading...</span>
         <span>》</span>
@@ -90,7 +86,6 @@
 <span class="" ><a href="https://support.qq.com/product/467468" class=""style="font-size: 1.17em; font-weight: bold; padding:0; color: #777;    text-decoration: none; white-space: nowrap;    display: block;" >祝你生活愉快</a></span>
 
 <br /><br /><br />
-
 
 <script src="https://gcore.jsdelivr.net/gh/liveeeee/lizhi@main/skPlayer.min.js"></script>
 <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
@@ -402,14 +397,14 @@ darkmode.showWidget();
 
 </script>
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?3ad6fca87a5d80c93885c290b711ebc6";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3ad6fca87a5d80c93885c290b711ebc6";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
 </body>
 </html>

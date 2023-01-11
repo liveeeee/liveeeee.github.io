@@ -1,3 +1,3 @@
-# lzbb.live
+http://lzbb.live/
 lizhi music
-李志音乐播放器
+李志BB音乐在线播放
